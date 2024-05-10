@@ -1,12 +1,11 @@
-import Navbar from "./components/Navbar";
-
 import "./App.css";
+import WeatherCard from "./components/WeatherCard";
 
 function App() {
   return (
     <>
       <h1>Clima App</h1>
-      <Navbar />
+      <WeatherCard />
     </>
   );
 }
