@@ -38,12 +38,7 @@ const WeatherCard: React.FC = () => {
   };
 
   return (
-    <div
-      className="main"
-      style={{
-        height: "100vh",
-      }}
-    >
+    <div className="main">
       <div
         style={{
           background:
@@ -52,21 +47,25 @@ const WeatherCard: React.FC = () => {
               : weatherData && weatherData.main.temp < 20
               ? "blue"
               : "white",
-          width: "50%",
-          height: "100%",
         }}
       >
         <input type="text" onChange={handleChangeLocation} />
         <button onClick={handleSearch}>Buscar</button>
-        {weatherData && (
-          <div>
-            <div className="location">
-              <p>Cidade: {weatherData.name}</p>
-            </div>
-            <p>Temperatura: {weatherData.main.temp}</p>
-            <p>Tempo: {weatherData.weather[0].description}</p>
+        <div className="main__result">
+          {weatherData && (
+            <>
+              <div className="main__result-item">
+                <p>Cidade: {weatherData.name}</p>
+                <p>Temperatura: {weatherData.main.temp}</p>
+                <p>Tempo: {weatherData.weather[0].description}</p>
+              </div>
+            </>
+          )}
+          {/* previsao para os outros 7 dias */}
+          <div className="main__result-week">
+            <p>Terça feira</p>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

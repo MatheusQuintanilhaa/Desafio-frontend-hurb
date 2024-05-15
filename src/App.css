@@ -14,19 +14,18 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 200px;
+  width: 100%;
+  font-size: 10pt;
+  background-color: blueviolet;
 }
 
-.location {
+.main__result {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  border: 2px solid #fff;
-  width: 100%;
-  height: 90px;
-  font-weight: bold;
-  color: grey;
-  background-color: #e8dada;
+  background-color: blue;
+  height: 50vh;
+}
+
+.main__result-item {
+  display: flex;
+  flex-direction: column;
 }
