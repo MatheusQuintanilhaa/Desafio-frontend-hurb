@@ -1,0 +1,20 @@
+:root {
+  --black: #000000d4;
+  --gray: #4f4b4b;
+  --lightBlue: #d6f9ff;
+}
+
+body {
+  background-color: var(--black);
+  min-height: 100vh;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

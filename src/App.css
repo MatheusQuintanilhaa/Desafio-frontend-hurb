@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,26 +6,42 @@
 
 body {
   background-color: #fff;
-  background-image: url(assets/tucano.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #000000e7;
 }
 
-.main {
+.input-container {
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: 10pt;
-  background-color: blueviolet;
+}
+
+input {
+  width: 30%;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .main__result {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   background-color: blue;
   height: 50vh;
+  gap: 100px;
 }
 
 .main__result-item {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
+  border: 2px solid #fff;
+  background-color: yellow;
 }
+
+.main__result-week {
+} */

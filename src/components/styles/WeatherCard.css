@@ -1,0 +1,48 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* Ajuste conforme necessário */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.weather-info {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.main__result-item {
+  padding: 20px;
+  background-color: var(--black);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--lightBlue);
+}
+
+:root {
+  --black: #000000d4;
+  --gray: #4f4b4b;
+  --lightBlue: #d6f9ff;
+}
+
+body {
+  background-color: var(--black);
+  min-height: 100vh;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
